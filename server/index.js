@@ -18,6 +18,13 @@ const callPairs = new Map();
 const connectedUsers = new Set();
 const socketToUidMap = new Map();
 const uidToSocketMap = new Map();
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
 
 function tryPairUsers() {
   while (lobby.length >= 2) {
@@ -132,6 +139,9 @@ io.on('connection', (socket) => {
     const index = lobby.indexOf(socket.id);
     if (index !== -1) lobby.splice(index, 1);
   });
+});
+app.get('/', (req, res) => {
+  res.send('WebSocket server is running!');
 });
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
