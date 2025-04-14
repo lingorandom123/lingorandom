@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+.format {
+    display: 'flex';
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.format > h3 {
+    text-align: left;
+}
+.format > div {
+    width: 40%;
+}
+.format > div {
+    display: flex;
+    flex-direction: column;
+}
+form > label {
+    margin: 10px;
+    display: inline-block;
+}

@@ -1,0 +1,101 @@
+.landing-page {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fff;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    position: relative;
+    overflow: hidden;
+    
+    background-color: #01796f; 
+    color: white;/* Give space to see the image at bottom */
+  }
+  .header-inner {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .header-inner > div {
+    flex: 0 0 50%;
+    height: 250px;
+  }
+  .header-inner >div:last-child {
+    display: flex;
+    justify-content: right;
+    align-content: end;
+  } 
+  .header-inner >div:last-child > img {
+    offset-position: -20px;
+  }
+  .image-wrapper {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 200px; /* clip width */
+    height: 200px; /* clip height */
+    overflow: hidden;
+  }
+  .header-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: auto;
+  }
+  
+  
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    font-weight: bold;
+    background-color: #2ecc71;
+    border: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #27ae60;
+  }
+  
+  .section-title {
+    margin: 3rem 0 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .feature-card {
+    background-color: #eaf1f7;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .faq-section,
+  .about-us {
+    background-color: #f9fafb;
+    padding: 3rem 0;
+    color: #555;
+  }
+  
+
+  
+  .faq-list, .about-us {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+  

@@ -1,0 +1,26 @@
+* { 
+    box-sizing: border-box;
+}
+.auth {
+    display: 'flex';
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.auth > h3 {
+    text-align: left;
+}
+
+.auth > form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+    
+}
+.auth> form >div > div {
+    margin-bottom: 5px;
+}
+
+

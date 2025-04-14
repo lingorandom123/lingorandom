@@ -1,0 +1,55 @@
+/* Container for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Keeps logo on the left and other items on the right */
+    align-items: center; /* Vertically center content */
+     padding: 20px;/* Padding around the content */
+    background-color: #01796f; /* Optional: Change the background color */
+     /* Optional: Add a border at the bottom of the nav */
+  }
+  
+  /* Logo on the left */
+  nav img {
+    cursor: pointer; /* Change cursor to pointer when hovering over the logo */
+  }
+  
+  /* Right side content */
+  nav .right {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* Style for the language dropdown */
+  nav select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for the links (About Us, FAQ) */
+  nav a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+ 
+  
+  /* Style for the button */
+  nav button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+  }
