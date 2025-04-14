@@ -133,7 +133,7 @@ io.on('connection', (socket) => {
     if (index !== -1) lobby.splice(index, 1);
   });
 });
-
-server.listen(3001,'0.0.0.0', () => {
+const PORT = process.env.PORT || 3001;
+server.listen(PORT, () => {
   console.log('Server running on http://localhost:3001');
 });
